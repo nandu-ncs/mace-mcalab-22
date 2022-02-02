@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+	<style type="text/css">
+		body {
+			margin: 2%;
+			color: white;
+			background-color: wheat;
+		}
+		table {
+			margin: auto;
+			border-style: inset;
+			border-spacing: 25px;
+			border-radius: 25px;
+			background-image: linear-gradient(135deg,blue,cyan);
+		}
+		th{
+			text-align: left;
+		}
+		input[type="text"],input[type="email"],input[type="number"],textarea {
+			width: 280px;
+			height: 25px;
+			border-radius: 5px;
+		}
+		select,input[type="date"] {
+			width: -webkit-fill-available;
+			height: 27px;
+			border-radius: 5px;
+		}
+		input[type="submit"] {
+			width: 100px;
+			height: 35px;
+			border-radius: 5px;
+		}
+	</style>
+</head>
+<body>
+	<form>
+		<table cellspacing="5px" cellpadding="5px">
+			<tr>
+				<th colspan="2" style="text-align: center;"><h2>REGISTRATION</h2></th>
+			</tr>
+			<tr>
+				<th>Name</th>
+				<td><input type="text" name="name"></td>
+			</tr>
+			<tr>
+				<th>Email</th>
+				<td><input type="email" name="email"></td>
+			</tr>
+			<tr>
+				<th>Phone</th>
+				<td><input type="text" name="phone"></td>
+			</tr>
+			<tr>
+				<th>Date of Birth</th>
+				<td><input type="date" name="dob"></td>
+			</tr>
+			<tr>
+				<th>Gender</th>
+				<td>
+					<input type="radio" name="gen"> Male
+					<input type="radio" name="gen"> Female
+					<input type="radio" name="gen"> Other
+				</td>
+			</tr>
+			<tr>
+				<th>Address</th>
+				<td><textarea name="address" rows="5" style="height: auto;"></textarea></td>
+			</tr>
+			<tr>
+				<th>Cousre</th>
+				<td>
+					<select name="course">
+						<option></option>
+						<option>MCA</option>
+						<option>M.Tech</option>
+						<option>B.Tech</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th>Semester</th>
+				<td><input type="number" name="sem"></td>
+			</tr>
+			<tr>
+				<th>Skill</th>
+				<td>
+					<input type="checkbox" name="skill">Pogramming
+					<input type="checkbox" name="skill">Designing<br>
+					<input type="checkbox" name="skill">Creativity and innovation
+					<input type="checkbox" name="skill">Analytics
+				</td>
+			</tr>
+			<tr>
+				<th colspan="2" style="text-align: center;">
+					<input type="submit" name="sub" value="Register" style="background-color: lawngreen;">
+				</th>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
