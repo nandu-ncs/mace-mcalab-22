@@ -6,9 +6,9 @@
     "configurations": [
         {
             "name": "(Windows) Launch",
-            "type": "cppvsdbg",
+            "type": "python",
             "request": "launch",
-            "program": "enter program name, for example ${workspaceFolder}/a.exe",
+            "program": "${file}",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
