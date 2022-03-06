@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<stdlib.h>
 #include<conio.h>
 int a[10],front=-1,rear=-1,n;
 void insert() {
@@ -91,6 +90,7 @@ void search() {
 }
 void main() {
     char ch;
+    clrscr();
     printf("Enter the size of the queue : ");
     scanf("%d",&n);
     while(1) {
@@ -112,7 +112,7 @@ void main() {
             break;
             case '5':printf("\nPress any key to exit..");
             getch();
-            exit(0);
+            exit();
             break;
             default:printf("\nInvalid choice");
         }

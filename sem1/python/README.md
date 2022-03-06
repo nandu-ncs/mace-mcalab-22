@@ -103,6 +103,63 @@
     <li>Write a function to get a new string from a given string by adding 'Is' to the begining of the input string. If the given string already begins with 'Is', return the input string unchanged.</li>
     <li>Write a function that accept aword and a count, n(non-negative integer) and return n copies of the word.</li>
     <li>Write a function that accepts 2 integers, perform the 4 basic arithmetic opereations and return the result.</li>
-    <li>Write a function that returns whether 2 integers given are equal, they adds to 5 and their differnce is 5.</li>
-    <li></li>
+    <li>Write a function that returns whether 2 integers given are equal, they adds to 5 and their difference is 5.</li>
+    <li>Write lambda functions:</li>
+    <ol type='a'>
+        <li>To find largest of 2 numbers.</li>
+        <li>To check the input number is divisible by 5.</li>
+        <li>To remove all strings with length &lt; 5 from a list of strings.</li>
+        <li>To increment a list of integers by 10% if the number is greater than 1000 else by 5%.</li>
+    </ol>
+    <li>Write lambda functions, each to find area of square, rectangle and triangle.</li>
+    <li>Write a recursive function to find factorial of a number.</li>
+    <li>Write a recursive function to find n th term in the Fibonacci series.</li>
+    <li>Write a recursive function to find the sum of digits of a given number.</li>
+    <li>Write a recursive function to find sum of first n whole numbers.</li>
+    <li>Write a recursive function to reverse a string.</li>
+    <li>Write a recursive function to convert a decimal number to binary.</li>
+    <li>Validate Password</li>
+    <ul>
+        <li>Min length 6</li>
+        <li>Max length 16</li>
+        <li>Starts with character or digit</li>
+        <li>Should have atleast one uppercase, lowercase, digit and symbol</li>
+    </ul>
+    <li>Write a program to demonstrate a ZeroDivisionError snd ValueError</li>
+    <li>Write a program that accepts an integer from user and raises ValueError with argument 'Abnormal Condition', if the reading is not within the range 90 and 120.</li>
+    <li>Create a user defined exception 'validate' to validate login credentials.</li>
+    <li>Work with built-in modules – calendar, datetime modules.</li>
+    <li>Create a module operations which has functions to add, subtract, multiply and divide integers. Write a program that import operations and perform all integer operations.</li>
+    <li>Create a package graphics with modules rectangle, circle and sub-package dgraphics with modules cuboid and sphere. Include methods to find area and perimeter of rectangle and circle modules as well as methods to find area and volume of cuboid and sphere modules. Write programs that finds area, perimeter or volume of figures by different importing statements. (Include selective import of modules and import * statements)</li>
+    <li>Write a program to copy one file to another.</li>
+    <li>Write a program to find longest line of a file.</li>;
+    <li>Remove a specific line from a file.</li>;
+    <li>Find the no: of lines in a file.</li>
+    <li>Seperate odd and even numbers in a file to separate files.</li>
+    <li>Find the longest word(s) in a file.</li>
+    <li>Create Rectangle class with attributes length and breadth and implement methods to determine area and perimeter. Create a Rectangle object and find its area and perimeter.</li>
+    <li>Create a class Flower (name). Add the attribute petalColor at runtime. If the flower has the attribute petalColor then display ‘&lt;petalColor&gt; &lt;name&gt;’ else display ‘Unknown Flower’.</li>
+    <li>Create class Book (title, author). Add attribute ‘publisher’ at runtime. If the attribute ‘publisher’ is available in Book object, then print &lt;title&gt; written by &lt;author&gt; is published by &lt;publisher&gt;, else print ‘Unknown Publisher’</li>
+    <li>Create a Bank account with members account number, name, type of account and balance. Write constructor and methods to deposit at the bank and withdraw an amount from the bank.</li>
+    <li>Create a class Rectangle with private attributes length and width.Overload ‘&lt;’ operator to compare the area of 2 rectangles.</li>
+    <li>Create a class Time with private attributes hour, minute and second. Overload ‘+’ operator to find sum of 2 time.</li>
+    <li>Create class Time (Hour, Min, Sec). Compare two time objects in 24-hour clock and return the earliest time.</li>
+    <li>Create class Person (name, roll) and Marks (Maths, Computer). Create class Student from Person and Marks. Display student details and pass percentage if 50% is needed for a pass.</li>
+    <li>Create class Rectangle (length,breadth). Derive class Cuboid (height) from Rectangle. Compare 2 Cuboid based on volume by overloading ‘&lt;=’ operator.</li>
+    <li>Create a class Publisher (name). Derive class Book (title, author) from Publisher. Derive class Python (price,no_of_pages) from Book. Write a program that displays information about a Python book. Use base class constructor invocation and method overriding.</li>
+    <li>Create class Person (name,phno). Create class Dept (name,location). Derive class Employee (designation, Salary) from Person and Dept. Display details of an employee after giving 10% increment to salary.</li>
+    <ol type='a'>
+        <li>Compare 2 Emp with respect to department. (==)</li>
+        <li>Compare 2 Emp with respect to salary (&gt;=)</li>
+    </ol>
+    <li>Write a python program to extract lines from a file</li>
+    <ol type='a'>
+        <li>Containing the word ‘explain’</li>
+        <li>Containing dates</li>
+        <li>Containing 8 or above letter words</li>
+        <li>Containing mobile numbers</li>
+    </ol>
+    <li>Write a Python program to read each row from a given csv file and print a list of strings.</li>
+    <li>Write a Python program to read specific columns of a given CSV file and print the content of the columns.</li>
+    <li>Write a Python program to write a Python dictionary to a csv file. After writing the CSV file read the CSV file and display the content.</li>    
 <ol>
