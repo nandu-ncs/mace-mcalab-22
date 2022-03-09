@@ -41,7 +41,7 @@ void pop() {
 	}
 }
 void search() {
-	int i=0,f=0,x;
+	int i=1,f=0,x;
 	struct node *ptr;
 	ptr=start;
 	if(ptr==NULL) {
@@ -58,11 +58,11 @@ void search() {
 			i++;
 			ptr=ptr->next;
 		}
+		if(f==0)
+			printf("\nItem not found");
+		else
+			printf("\nItem found at position %d",i);
 	}
-	if(f==0)
-		printf("\nItem not found");
-	else
-		printf("\nItem found at position %d",i);
 }
 void main() {
 	int ch=0;
