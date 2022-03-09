@@ -132,8 +132,8 @@
     <li>Create a module operations which has functions to add, subtract, multiply and divide integers. Write a program that import operations and perform all integer operations.</li>
     <li>Create a package graphics with modules rectangle, circle and sub-package dgraphics with modules cuboid and sphere. Include methods to find area and perimeter of rectangle and circle modules as well as methods to find area and volume of cuboid and sphere modules. Write programs that finds area, perimeter or volume of figures by different importing statements. (Include selective import of modules and import * statements)</li>
     <li>Write a program to copy one file to another.</li>
-    <li>Write a program to find longest line of a file.</li>;
-    <li>Remove a specific line from a file.</li>;
+    <li>Write a program to find longest line of a file.</li>
+    <li>Remove a specific line from a file.</li>
     <li>Find the no: of lines in a file.</li>
     <li>Seperate odd and even numbers in a file to separate files.</li>
     <li>Find the longest word(s) in a file.</li>
