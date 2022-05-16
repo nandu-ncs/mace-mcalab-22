@@ -7,7 +7,7 @@ SQL> select sid from reserves22,boats22 where reserves22.bid=boats22.bid and col
         64
         74
 
-SQL> select sname from sailors22 intersect select sname from sailors22,reserves22 where sailors22.sid=reserves22.sid;
+SQL> select sname from sailors22 intersect select sname from sailors22,reserves22 where sailors22.sid=reserves22.sid and bid=103;
 
 SNAME
 --------------------
