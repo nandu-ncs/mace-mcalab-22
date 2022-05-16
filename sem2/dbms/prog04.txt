@@ -1,0 +1,81 @@
+
+
+SQL> create table student22 (rollno int,name varchar(20),course varchar(20));
+
+Table created.
+
+SQL> insert into student22 values(1,'Aiswarya','MCA');
+
+1 row created.
+
+SQL> insert into student22 values(2,'Alen','MCA');
+
+1 row created.
+
+SQL> savepoint a;
+
+Savepoint created.
+
+SQL> select * from student22;
+
+    ROLLNO NAME                 COURSE
+---------- -------------------- --------------------
+         1 Aiswarya             MCA
+         2 Alen                 MCA
+
+SQL> insert into student22 values(3,'Anakha','MCA');
+
+1 row created.
+
+SQL> insert into student22 values(4,'Aneeta','MCA');
+
+1 row created.
+
+SQL> select * from student22;
+
+    ROLLNO NAME                 COURSE
+---------- -------------------- --------------------
+         1 Aiswarya             MCA
+         2 Alen                 MCA
+         3 Anakha               MCA
+         4 Aneeta               MCA
+
+SQL> rollback to a;
+
+Rollback complete.
+
+SQL> select * from student22;
+
+    ROLLNO NAME                 COURSE
+---------- -------------------- --------------------
+         1 Aiswarya             MCA
+         2 Alen                 MCA
+
+SQL> commit;
+
+Commit complete.
+
+SQL> insert into student22 values(5,'Anit','MCA');
+
+1 row created.
+
+SQL> select * from student22;
+
+    ROLLNO NAME                 COURSE
+---------- -------------------- --------------------
+         1 Aiswarya             MCA
+         2 Alen                 MCA
+         5 Anit                 MCA
+
+SQL> rollback;
+
+Rollback complete.
+
+SQL> select * from student22;
+
+    ROLLNO NAME                 COURSE
+---------- -------------------- --------------------
+         1 Aiswarya             MCA
+         2 Alen                 MCA
+
+SQL>

@@ -1,0 +1,88 @@
+
+SQL> create table student22a (student_id int primary key,student_name varchar(20
+),marks float);
+
+Table created.
+
+SQL> insert into student22a values(1,'Sanjay',64);
+
+1 row created.
+
+SQL> insert into student22a values(2,'Varun',72);
+
+1 row created.
+
+SQL> insert into student22a values(3,'Akash',45);
+
+1 row created.
+
+SQL> insert into student22a values(4,'Rohit',86);
+
+1 row created.
+
+SQL> insert into student22a values(5,'Anjali',92);
+
+1 row created.
+
+SQL> insert into student22a values(6,'Ammu',95);
+
+1 row created.
+
+SQL> insert into student22a values(7,'Rahul',80);
+
+1 row created.
+
+SQL> insert into student22a values(8,'Prathibha',62);
+
+1 row created.
+
+SQL> insert into student22a values(9,'Ravi',75);
+
+1 row created.
+
+SQL> insert into student22a values(10,'Pulkit',76);
+
+1 row created.
+                                                                                                                                                                                                                                                              
+SQL> select * from student22a;
+
+STUDENT_ID STUDENT_NAME              MARKS
+---------- -------------------- ----------
+         1 Sanjay                       64
+         2 Varun                        72
+         3 Akash                        45
+         4 Rohit                        86
+         5 Anjali                       92
+         6 Ammu                         95
+         7 Rahul                        80
+         8 Prathibha                    62
+         9 Ravi                         75
+        10 Pulkit                       76
+
+10 rows selected.
+
+SQL> select count(*) from student22a where marks>75;
+
+  COUNT(*)
+----------
+         5
+
+SQL> select avg(marks) as average_marks from student22a;
+
+AVERAGE_MARKS
+-------------
+         74.7
+
+SQL> select min(marks) as minimum_marks from student22a;
+
+MINIMUM_MARKS
+-------------
+           45
+
+SQL> select max(marks) as maximum_marks from student22a;
+
+MAXIMUM_MARKS
+-------------
+           95
+
+SQL>

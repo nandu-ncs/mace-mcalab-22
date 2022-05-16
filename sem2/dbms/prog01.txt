@@ -1,0 +1,35 @@
+
+
+SQL>  create table student22 (rollno int,name varchar(20),course varchar(20),yea
+r int);
+
+Table created.
+
+SQL> select * from student22;
+
+no rows selected
+
+SQL> alter table student22 add primary key(rollno);
+
+Table altered.
+
+SQL> truncate table student22;
+
+Table truncated.
+
+SQL> select * from student22;
+
+no rows selected
+
+SQL> drop table student22;
+
+Table dropped.
+
+SQL> select * from student22;
+select * from student22
+              *
+ERROR at line 1:
+ORA-00942: table or view does not exist
+
+
+SQL>

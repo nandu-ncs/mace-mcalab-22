@@ -1,0 +1,199 @@
+
+
+SQL> create table employee22a (id int primary key,first_name varchar(20),last_na
+me varchar(20),department varchar(20),location varchar(20),salary float);
+
+Table created.
+
+
+SQL> insert into employee22a values(1,'Harshad','Kuwar','Marketing','Pune',10000
+);
+
+1 row created.
+
+SQL> insert into employee22a values(2,'Anurag','Rajput','IT','Mumbai',20000);
+
+1 row created.
+
+SQL> insert into employee22a values(3,'Chaitali','Tarle','IT','Chennai',30000);
+
+1 row created.
+
+SQL> insert into employee22a values(4,'Pranjal','Patil','IT','Chennai',25000);
+
+1 row created.
+
+SQL> insert into employee22a values(5,'Suraj','Tripathi','Marketing','Pune',1500
+0);
+
+1 row created.
+
+SQL> insert into employee22a values(6,'Roshini','Jadhar','Finance','Banglore',20
+000);
+
+1 row created.
+
+SQL> insert into employee22a values(7,'Sandhya','Jain','Finance','Banglore',2000
+0);
+
+1 row created.
+
+SQL> select * from employee22a;
+
+        ID FIRST_NAME           LAST_NAME            DEPARTMENT
+---------- -------------------- -------------------- --------------------
+LOCATION                 SALARY
+-------------------- ----------
+         1 Harshad              Kuwar                Marketing
+Pune                      10000
+
+         2 Anurag               Rajput               IT
+Mumbai                    20000
+
+         3 Chaitali             Tarle                IT
+Chennai                   30000
+
+
+        ID FIRST_NAME           LAST_NAME            DEPARTMENT
+---------- -------------------- -------------------- --------------------
+LOCATION                 SALARY
+-------------------- ----------
+         4 Pranjal              Patil                IT
+Chennai                   25000
+
+         5 Suraj                Tripathi             Marketing
+Pune                      15000
+
+         6 Roshini              Jadhar               Finance
+Banglore                  20000
+
+
+        ID FIRST_NAME           LAST_NAME            DEPARTMENT
+---------- -------------------- -------------------- --------------------
+LOCATION                 SALARY
+-------------------- ----------
+         7 Sandhya              Jain                 Finance
+Banglore                  20000
+
+
+7 rows selected.
+
+SQL> select * from employee22a where department='IT' and location='Chennai';
+
+        ID FIRST_NAME           LAST_NAME            DEPARTMENT
+---------- -------------------- -------------------- --------------------
+LOCATION                 SALARY
+-------------------- ----------
+         3 Chaitali             Tarle                IT
+Chennai                   30000
+
+         4 Pranjal              Patil                IT
+Chennai                   25000
+
+
+SQL> select * from employee22a where department='IT' or location='Chennai';
+
+        ID FIRST_NAME           LAST_NAME            DEPARTMENT
+---------- -------------------- -------------------- --------------------
+LOCATION                 SALARY
+-------------------- ----------
+         2 Anurag               Rajput               IT
+Mumbai                    20000
+
+         3 Chaitali             Tarle                IT
+Chennai                   30000
+
+         4 Pranjal              Patil                IT
+Chennai                   25000
+
+
+SQL> select first_name as emp_fn,location as address from employee22a;
+
+EMP_FN               ADDRESS
+-------------------- --------------------
+Harshad              Pune
+Anurag               Mumbai
+Chaitali             Chennai
+Pranjal              Chennai
+Suraj                Pune
+Roshini              Banglore
+Sandhya              Banglore
+
+7 rows selected.
+
+SQL> select * from employee22a where first_name like 'S%';
+
+        ID FIRST_NAME           LAST_NAME            DEPARTMENT
+---------- -------------------- -------------------- --------------------
+LOCATION                 SALARY
+-------------------- ----------
+         5 Suraj                Tripathi             Marketing
+Pune                      15000
+
+         7 Sandhya              Jain                 Finance
+Banglore                  20000
+
+
+SQL> select location,sum(salary) from employee22a group by location;
+
+LOCATION             SUM(SALARY)
+-------------------- -----------
+Mumbai                     20000
+Pune                       25000
+Chennai                    55000
+Banglore                   40000
+
+
+SQL> select location from employee22a group by location having sum(salary)>10000
+;
+
+LOCATION
+--------------------
+Mumbai
+Pune
+Chennai
+Banglore
+
+SQL> select * from employee22a order by first_name;
+
+        ID FIRST_NAME           LAST_NAME            DEPARTMENT
+---------- -------------------- -------------------- --------------------
+LOCATION                 SALARY
+-------------------- ----------
+         2 Anurag               Rajput               IT
+Mumbai                    20000
+
+         3 Chaitali             Tarle                IT
+Chennai                   30000
+
+         1 Harshad              Kuwar                Marketing
+Pune                      10000
+
+
+        ID FIRST_NAME           LAST_NAME            DEPARTMENT
+---------- -------------------- -------------------- --------------------
+LOCATION                 SALARY
+-------------------- ----------
+         4 Pranjal              Patil                IT
+Chennai                   25000
+
+         6 Roshini              Jadhar               Finance
+Banglore                  20000
+
+         7 Sandhya              Jain                 Finance
+Banglore                  20000
+
+
+        ID FIRST_NAME           LAST_NAME            DEPARTMENT
+---------- -------------------- -------------------- --------------------
+LOCATION                 SALARY
+-------------------- ----------
+         5 Suraj                Tripathi             Marketing
+Pune                      15000
+
+
+7 rows selected.
+
+SQL>
+
+

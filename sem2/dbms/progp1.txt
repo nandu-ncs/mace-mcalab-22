@@ -1,0 +1,74 @@
+
+
+SQL> create table std (rollno int primary key,name varchar(20),cgpa float,age in
+t,gender varchar(10));
+
+Table created.
+
+SQL> select * from std;
+
+no rows selected
+
+SQL> insert into std values(1,'Aiswarya',7.5,20,'female');
+
+1 row created.
+
+SQL> insert into std values(2,'Alen',8.1,21,'male');
+
+1 row created.
+
+SQL> insert into std values(3,'Anakha',7.21,22,'female');
+
+1 row created.
+
+SQL> insert into std values(4,'Aneeta',6.85,22,'female');
+
+1 row created.
+
+SQL> insert into std values(6,'Aswanth',6.25,22,'male');
+
+1 row created.
+
+SQL> select * from std where gender='female';
+
+    ROLLNO NAME                       CGPA        AGE GENDER
+---------- -------------------- ---------- ---------- ----------
+         1 Aiswarya                    7.5         20 female
+         3 Anakha                     7.21         22 female
+         4 Aneeta                     6.85         22 female
+
+SQL> select * from std;
+
+    ROLLNO NAME                       CGPA        AGE GENDER
+---------- -------------------- ---------- ---------- ----------
+         1 Aiswarya                    7.5         20 female
+         2 Alen                        8.1         21 male
+         3 Anakha                     7.21         22 female
+         4 Aneeta                     6.85         22 female
+         6 Aswanth                    6.25         22 male
+
+SQL> select * from std where gender='male' and age in (select min(age) from std
+where gender='male');
+
+    ROLLNO NAME                       CGPA        AGE GENDER
+---------- -------------------- ---------- ---------- ----------
+         2 Alen                        8.1         21 male
+
+
+SQL> select name,cgpa from std where cgpa>6.5 order by cgpa desc,name;
+
+NAME                       CGPA
+-------------------- ----------
+Alen                        8.1
+Aiswarya                    7.5
+Anakha                     7.21
+Aneeta                     6.85
+
+
+SQL> select name from std where cgpa=(select max(cgpa) from std);
+
+NAME
+--------------------
+Alen
+
+SQL>

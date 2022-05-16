@@ -1,0 +1,134 @@
+
+SQL> create table employee22(empid int,name varchar(20),dept int,salary int);
+
+Table created.
+
+SQL> create table department(deptid int,deptname varchar(20),headofdept varchar(
+20));
+
+Table created.
+
+SQL>  insert into department values (1,'Accounting','Alan');
+
+1 row created.
+
+SQL>  insert into department values (2,'Production','Arun');
+
+1 row created.
+
+SQL>  insert into department values (3,'HR','Nandu');
+
+1 row created.
+
+SQL>  insert into department values (4,'Research','Atul');
+
+1 row created.
+
+SQL>  insert into department values (5,'Travel','Gokul');
+
+1 row created.
+
+SQL> select * from department;
+
+    DEPTID DEPTNAME             HEADOFDEPT
+---------- -------------------- --------------------
+         1 Accounting           Alan
+         2 Production           Arun
+         3 HR                   Nandu
+         4 Research             Atul
+         5 Travel               Gokul
+
+SQL> insert into employee22 values(101,'Ben',1,1000);
+
+1 row created.
+
+SQL> insert into employee22 values(102,'Biby',1,1500);
+
+1 row created.
+
+SQL> insert into employee22 values(103,'Benoi',3,2500);
+
+1 row created.
+
+SQL> insert into employee22 values(104,'Joel',4,3500);
+
+1 row created.
+
+SQL> insert into employee22 values(105,'Tom',5,2000);
+
+1 row created.
+
+SQL> select * from employee22;
+
+     EMPID NAME                       DEPT     SALARY
+---------- -------------------- ---------- ----------
+       101 Ben                           1       1000
+       102 Biby                          1       1500
+       103 Benoi                         3       2500
+       104 Joel                          4       3500
+       105 Tom                           5       2000
+
+SQL> alter table employee22 add primary key(empid);
+
+
+Table altered.
+
+SQL> alter table department add primary key(deptid);
+
+
+Table altered.
+
+SQL> alter table employee22 add foreign key(dept) references department(deptid);
+
+
+Table altered.
+
+SQL> select * from employee22;
+
+     EMPID NAME                       DEPT     SALARY
+---------- -------------------- ---------- ----------
+       101 Ben                           1       1000
+       102 Biby                          1       1500
+       103 Benoi                         3       2500
+       104 Joel                          4       3500
+       105 Tom                           5       2000
+
+SQL> select * from department;
+
+    DEPTID DEPTNAME             HEADOFDEPT
+---------- -------------------- --------------------
+         1 Accounting           Alan
+         2 Production           Arun
+         3 HR                   Nandu
+         4 Research             Atul
+         5 Travel               Gokul
+
+
+SQL> update department set headofdept='Fasil' where deptid=4;
+
+1 row updated.
+
+SQL> select * from department;
+
+    DEPTID DEPTNAME             HEADOFDEPT
+---------- -------------------- --------------------
+         1 Accounting           Alan
+         2 Production           Arun
+         3 HR                   Nandu
+         4 Research             Fasil
+         5 Travel               Gokul
+
+SQL> delete from employee22 where empid=105;
+
+1 row deleted.
+
+SQL> select * from employee22;
+
+     EMPID NAME                       DEPT     SALARY
+---------- -------------------- ---------- ----------
+       101 Ben                           1       1000
+       102 Biby                          1       1500
+       103 Benoi                         3       2500
+       104 Joel                          4       3500
+
+SQL>

@@ -1,0 +1,29 @@
+
+
+SQL> select * from customer where id=4;
+
+        ID NAME                        AGE HOMETOWN                 SALARY
+---------- -------------------- ---------- -------------------- ----------
+         4 Chaitali                     25 Mumbai                     6500
+
+SQL> select distinct hometown from customer;
+
+HOMETOWN
+--------------------
+Bhopal
+Ahmedabad
+Delhi
+Kota
+Mumbai
+MP
+Indore
+
+7 rows selected.
+
+SQL> select count(salary) from customer;
+
+COUNT(SALARY)
+-------------
+           10
+
+SQL>

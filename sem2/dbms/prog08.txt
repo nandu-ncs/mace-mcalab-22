@@ -1,0 +1,210 @@
+
+
+SQL> create table sailors22 (sid int primary key,sname varchar(20),rating int,ag
+e float);
+
+Table created.
+
+SQL> create table boats22 (bid int primary key,bname varchar(20),color varchar(2
+0));
+
+Table created. 
+
+SQL> create table reserves22 (sid int,bid int,day date,foreign key(bid) referenc
+es boats22(bid),foreign key(sid) references sailors22(sid));
+
+Table created.
+
+SQL> insert into sailors22 values(22,'Dustin',7,45.0);
+
+1 row created.
+
+SQL> insert into sailors22 values(29,'Brutus',1,33.0);
+
+1 row created.
+
+SQL> insert into sailors22 values(31,'Lubber',8,55.5);
+
+1 row created.
+
+SQL> insert into sailors22 values(32,'Andy',8,25.5);
+
+1 row created.
+
+SQL> insert into sailors22 values(58,'Rusty',10,35.0);
+
+1 row created.
+
+SQL> insert into sailors22 values(64,'Horatio',7,35.0);
+
+1 row created.
+
+SQL> insert into sailors22 values(71,'Zorba',10,16.0);
+
+1 row created.
+
+SQL> insert into sailors22 values(74,'Horatio',9,35.0);
+
+1 row created.
+
+SQL> insert into sailors22 values(85,'Art',3,25.5);
+
+1 row created.
+
+SQL> insert into sailors22 values(95,'Bob',3,63.5);
+
+1 row created.
+
+SQL> select * from sailors22;
+
+       SID SNAME                    RATING        AGE
+---------- -------------------- ---------- ----------
+        22 Dustin                        7         45
+        29 Brutus                        1         33
+        31 Lubber                        8       55.5
+        32 Andy                          8       25.5
+        58 Rusty                        10         35
+        64 Horatio                       7         35
+        71 Zorba                        10         16
+        74 Horatio                       9         35
+        85 Art                           3       25.5
+        95 Bob                           3       63.5
+
+10 rows selected.
+
+SQL> insert into boats22 values (101,'Interlake','blue');
+
+1 row created.
+
+SQL> insert into boats22 values (102,'Interlake','red');
+
+1 row created.
+
+SQL> insert into boats22 values (103,'Clipper','green');
+
+1 row created.
+
+SQL> insert into boats22 values (104,'Marine','red');
+
+1 row created.
+
+SQL> select * from boats22;
+
+       BID BNAME                COLOR
+---------- -------------------- --------------------
+       101 Interlake            blue
+       102 Interlake            red
+       103 Clipper              green
+       104 Marine               red
+
+SQL> insert into reserves22 values (22,101,'10-Oct-98');
+
+1 row created.
+
+SQL> insert into reserves22 values (22,102,'10-Oct-98');
+
+1 row created.
+
+SQL> insert into reserves22 values (22,103,'10-Aug-98');
+
+1 row created.
+
+SQL> insert into reserves22 values (22,104,'10-Jul-98');
+
+1 row created.
+
+SQL> insert into reserves22 values (31,102,'11-Oct-98');
+
+1 row created.
+
+SQL> insert into reserves22 values (31,103,'11-Jun-98');
+
+1 row created.
+
+SQL> insert into reserves22 values (31,104,'11-Dec-98');
+
+1 row created.
+
+SQL> insert into reserves22 values (64,101,'9-May-98');
+
+1 row created.
+
+SQL> insert into reserves22 values (64,102,'9-Aug-98');
+
+1 row created.
+
+SQL> insert into reserves22 values (74,103,'9-Aug-98');
+
+1 row created.
+
+SQL> select * from reserves22;
+
+       SID        BID DAY
+---------- ---------- ---------
+        22        101 10-OCT-98
+        22        102 10-OCT-98
+        22        103 10-AUG-98
+        22        104 10-JUL-98
+        31        102 11-OCT-98
+        31        103 11-JUN-98
+        31        104 11-DEC-98
+        64        101 09-MAY-98
+        64        102 09-AUG-98
+        74        103 09-AUG-98
+
+10 rows selected.
+
+SQL> select distinct(sname) from sailors22;
+
+SNAME
+--------------------
+Rusty
+Lubber
+Brutus
+Andy
+Art
+Bob
+Dustin
+Zorba
+Horatio
+
+9 rows selected.
+
+SQL> select * from sailors22 where sid in (select sid from reserves22 where bid=
+101);
+
+       SID SNAME                    RATING        AGE
+---------- -------------------- ---------- ----------
+        22 Dustin                        7         45
+        64 Horatio                       7         35
+
+SQL> select sname from sailors22 where sid in (select sid from reserves22);
+
+SNAME
+--------------------
+Dustin
+Lubber
+Horatio
+Horatio
+
+SQL> select sname,age from sailors22 where sid in (select sid from reserves22,bo
+ats22 where reserves22.bid=boats22.bid and color='red') order by age;
+
+SNAME                       AGE
+-------------------- ----------
+Horatio                      35
+Dustin                       45
+Lubber                     55.5
+
+SQL>
+
+
+
+SQL> select distinct s.sid,s.sname from sailors22 s,reserves22 r1,reserves r2 wh
+ere s.sid=r1.sid and s.sid=r2.sid and r1.day=r2.day and r1.bid<>r2.bid;
+
+       SID SNAME
+---------- --------------------
+        22 Dustin
+
+SQL>
