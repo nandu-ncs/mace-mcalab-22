@@ -2,7 +2,6 @@ class Product {
 	int p_code;
 	String p_name;
 	int p_price;
-	static int count = 0;
 	Product(int code,String name,int price) {
 		p_code = code;
 		p_name = name;

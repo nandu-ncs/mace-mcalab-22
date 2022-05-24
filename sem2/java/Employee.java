@@ -6,9 +6,9 @@ class Employee {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("Enter employee number : ");
 		eNo = Integer.parseInt(sc.nextLine());
-		System.out.print("Enter emplyee name : ");
+		System.out.print("Enter employee name : ");
 		eName = sc.nextLine();
-		System.out.print("Enter salary : ");;
+		System.out.print("Enter salary : ");
 		eSalary = sc.nextInt();
 		System.out.println();
 	}

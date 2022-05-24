@@ -1,5 +1,4 @@
 import java.util.*;
-import java.lang.*;
 
 interface Shape {
     float pi = 3.14F;
@@ -61,7 +60,7 @@ class ShapesInterface {
             System.out.println("3:Area of Rectangle");
             System.out.println("4:Perimter of Rectangle");
             System.out.println("5:EXIT");
-            System.out.println("enter choice ");
+            System.out.println("Enter your choice ");
             ch = Integer.parseInt(sc.nextLine());
             switch (ch) {
                 case 1:
