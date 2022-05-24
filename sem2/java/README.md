@@ -14,7 +14,6 @@
 Company_name, Qualification, Salary and its own constructor. Create another class ‘Teacher’ that inherits the properties of class Employee and contains its own data members like Subject, Department, Teacherid and contain constructors and methods
 to display the data members. Use array of objects to display details of N teachers.
 <li>Create an interface having prototypes of functions area() and perimeter(). Create two classes Circle and Rectangle which implements the above interface. Create a menu driven program to find area and perimeter of objects.</li>
-<li>Create a Graphics package that has classes and interfaces for figures Rectangle,
-Triangle, Square and Circle. Test the package by finding the area of these figures.</li>
 <li>Write a user defined exception class to authenticate the user name and password.</li>
+<li>Find the average of N positive integers, raising a user defined exception for each negative input.</li>
 </ol>
