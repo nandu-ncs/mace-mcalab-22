@@ -2,7 +2,9 @@ import java.util.*;
 
 interface Shape {
     float pi = 3.14F;
+
     float area();
+
     float perimeter();
 }
 
@@ -60,30 +62,26 @@ class ShapesInterface {
             System.out.println("3:Area of Rectangle");
             System.out.println("4:Perimter of Rectangle");
             System.out.println("5:EXIT");
-            System.out.println("Enter your choice ");
+            System.out.println("Enter your choice : ");
             ch = Integer.parseInt(sc.nextLine());
             switch (ch) {
-                case 1:
-                    float ar = c.area();
-                    System.out.println("Area  :" + ar);
+                case 1:                
+                    System.out.println("Area  : " + c.area());
                     break;
-                case 2:
-                    float pr = c.perimeter();
-                    System.out.println(pr);
+                case 2:                
+                    System.out.println("Perimeter : " + c.perimeter());
                     break;
-                case 3:
-                    float a = r.area();
-                    System.out.println("Area :" + a);
+                case 3:            
+                    System.out.println("Area : " + r.area());
                     break;
-                case 4:
-                    float pr1 = r.perimeter();
-                    System.out.println(pr1);
+                case 4:                    
+                    System.out.println("Perimeter : " + r.perimeter());
                     break;
                 case 5:
                     System.out.println("Exiting the Program");
                     System.exit(0);
                 default:
-                    System.out.println("invalid!");
+                    System.out.println("Invalid!");
 
             }
         }

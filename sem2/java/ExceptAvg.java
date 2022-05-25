@@ -31,12 +31,9 @@ class ExceptAvg {
                 System.out.println(" - is a negative number");
             }
         }
-        System.out.print("Count : ");
-        System.out.println(count);
-        System.out.print("sum: ");
-        System.out.println(sum);
-        System.out.print("Average : ");
-        System.out.println(sum / count);
+        System.out.println("Count : " + count);
+        System.out.println("Sum: " + sum);
+        System.out.println("Average : " + ((float)sum / count));
 
     }
 }

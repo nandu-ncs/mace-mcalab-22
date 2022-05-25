@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ExceptLogin",
+            "request": "launch",
+            "mainClass": "ExceptLogin",
+            "projectName": "mace-mcalab-22_d99fc32f"
+        },
+        {
+            "type": "java",
             "name": "Launch SumSingle",
             "request": "launch",
             "mainClass": "SumSingle",
