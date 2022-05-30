@@ -1,0 +1,58 @@
+SQL> select * from customers;
+
+        ID NAME                        AGE ADDRESS                  SALARY
+---------- -------------------- ---------- -------------------- ----------
+         1 Ramesh                       23 Allahabad                 20000
+         2 Suresh                       22 Kanpur                    22000
+         3 Mahesh                       24 Ghaziabad                 24000
+         4 Chandan                      25 Noida                     26000
+         5 Alex                         21 Paris                     28000
+         6 Sunita                       20 Delhi                     30000
+
+6 rows selected.
+
+SQL> @D:\nandu22\prog17trigger.sql
+
+Trigger created.
+
+SQL> @D:\nandu22\prog17.sql
+
+Old salary : 20000
+New salary : 25000
+Salary Difference : 5000
+
+Old salary : 22000
+New salary : 27000
+Salary Difference : 5000
+
+Old salary : 24000
+New salary : 29000
+Salary Difference : 5000
+
+Old salary : 26000
+New salary : 31000
+Salary Difference : 5000
+
+Old salary : 28000
+New salary : 33000
+Salary Difference : 5000
+
+Old salary : 30000
+New salary : 35000
+Salary Difference : 5000
+6 customers updated
+
+PL/SQL procedure successfully completed.
+
+SQL> select * from customers;
+
+        ID NAME                        AGE ADDRESS                  SALARY
+---------- -------------------- ---------- -------------------- ----------
+         1 Ramesh                       23 Allahabad                 25000
+         2 Suresh                       22 Kanpur                    27000
+         3 Mahesh                       24 Ghaziabad                 29000
+         4 Chandan                      25 Noida                     31000
+         5 Alex                         21 Paris                     33000
+         6 Sunita                       20 Delhi                     35000
+
+6 rows selected.

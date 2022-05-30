@@ -1,0 +1,9 @@
+SQL> @D:\nandu22\prog18.sql
+1 Ramesh Allahabad
+2 Suresh Kanpur
+3 Mahesh Ghaziabad
+4 Chandan Noida
+5 Alex Paris
+6 Sunita Delhi
+
+PL/SQL procedure successfully completed.
