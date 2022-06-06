@@ -1,0 +1,11 @@
+mca@mca-desktop:~/nandu$ ls
+com.zip  new  new2  text1.txt  text2.txt  text3.txt
+
+mca@mca-desktop:~/nandu$ mkdir new2
+
+mca@mca-desktop:~/nandu$ find . -name '*.txt' | xargs cp -t new2/
+mca@mca-desktop:~/nandu$ cd new2
+
+mca@mca-desktop:~/nandu/new2$ ls
+text1.txt  text2.txt  text3.txt
+

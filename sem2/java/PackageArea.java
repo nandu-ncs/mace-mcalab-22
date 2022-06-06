@@ -1,5 +1,6 @@
-import java.util.*;
-import Graphics.*;
+import java.util.Scanner;
+
+import graphics.GraphicsShapes;
 
 public class PackageArea {
     public static void main(String args[]) {

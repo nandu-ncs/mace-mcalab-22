@@ -7,7 +7,7 @@
 <li>Read two matrices from the console and perform matrix addition.(MainMatrix)</li>
 <li>Create a class CPU with attribute price. Create an inner class Processor (no. of cores, manufacturer) and a static nested class RAM (memory, manufacturer). Create an object of CPU and print information of Processor and RAM.(MainCpu)</li>
 <li>Program to Sort strings.(Sortstr)</li>
-<li>Perform string manipulations(Strman)</li>
+<li>Perform string manipulations.(Strman)</li>
 <li>Create a class Employee having attributes eNo, eName eSalary. Read 'N' employee information and Search for an employee given eNo, using the concept of Array of Objects.(Employee)</li>
 <li>Area of different shapes using overloaded functions.(OverloadShapes)</li>
 <li>Create a class ‘Person’ with data members Name, Gender, Address, Age and a constructor to initialize the data members and another class ‘Employee’ that inherits the properties of class Person and also contains its own data members like Empid,
@@ -16,4 +16,12 @@ to display the data members. Use array of objects to display details of N teache
 <li>Create an interface having prototypes of functions area() and perimeter(). Create two classes Circle and Rectangle which implements the above interface. Create a menu driven program to find area and perimeter of objects.(ShapesInterface)</li>
 <li>Write a user defined exception class to authenticate the user name and password.(ExceptLogin)</li>
 <li>Find the average of N positive integers, raising a user defined exception for each negative input.(ExceptAvg)</li>
+<li>Create a Graphics package that has classes and interfaces for figures Rectangle, Triangle, Square and Circle. Test the package by finding the area of these figures.</li>
+<li>Define 2 classes; one for generating Fibonacci numbers and other for displaying even numbers in a given range. Implement using threads (Runnable Interface).</li>
+<li>Program to create a generic stack and do the Push and Pop operations.</li>
+<li>Maintain a list of Strings using ArrayList from collection framework,perform built-in operations.</li>
+<li>Program to demonstrate the creation of queue object using the PriorityQueue class.</li>
+<li>Write a program to write to a file, then read from the file and display the contents on the console.</li>
+<li>Write a program that reads from a file having integers. Copy even numbers and odd numbers to separate files.</li>
+<li>Client Server communication using Socket – TCP/IP.</li>
 </ol>

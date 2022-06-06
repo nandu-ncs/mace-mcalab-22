@@ -1,0 +1,10 @@
+mca@mca-desktop:~/nandu$ ls
+cd  com.zip  new  new2  sorted.txt  text1.txt  text2.txt  text3.txt
+mca@mca-desktop:~/nandu$ mv sorted.txt newsort.txt
+mca@mca-desktop:~/nandu$ mv sorted.txt new2/newsort.txt
+mca@mca-desktop:~/nandu$ ls
+cd  com.zip  new  new2  text1.txt  text2.txt  text3.txt
+mca@mca-desktop:~/nandu$ cd new2
+mca@mca-desktop:~/nandu/new2$ ls
+newsort.txt  text1.txt  text2.txt  text3.txt
+mca@mca-desktop:~/nandu/new2$ 

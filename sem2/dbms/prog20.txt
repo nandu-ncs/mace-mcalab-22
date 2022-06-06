@@ -1,0 +1,113 @@
+Microsoft Windows [Version 6.1.7601]
+Copyright (c) 2009 Microsoft Corporation.  All rights reserved.
+
+C:\Users\Administrator>mongo
+2022-05-17T11:49:36.588+0530 I CONTROL  [main] Hotfix KB2731284 or later update
+is not installed, will zero-out data files
+MongoDB shell version: 3.2.22
+connecting to: test
+> use movie
+switched to db movie
+> db.createCollection("MovieDetails")
+{ "ok" : 1 }
+> db.MovieDetails.insert({title:"KGF 2",writer:"Prashanth Neel",year:2022,actor:
+"Yash"})
+WriteResult({ "nInserted" : 1 })
+> db.MovieDetails.insert({title:"Beast",writer:"Nelson",year:2022,actor:"Vijay"}
+)
+WriteResult({ "nInserted" : 1 })
+> db.MovieDetails.insert({title:"Tenet",writer:"Christopher Nolan",year:2020,act
+or:"John David"})
+WriteResult({ "nInserted" : 1 })
+> db.MovieDetails.insert({title:"KGF 1",writer:"Prashanth Neel",year:2019,actor:
+"Yash"})
+WriteResult({ "nInserted" : 1 })
+> db.MovieDetails.insert({title:"12th Man",writer:"K R Krishna Kumar",year:2022,
+actor:"Mohanlal"})
+WriteResult({ "nInserted" : 1 })
+> db.MovieDetails.insert({title:"Harry Potter",writer:"J K Rowling",year:2002,ac
+tor:"Daniel Radcliff"})
+WriteResult({ "nInserted" : 1 })
+> db.MovieDetails.insert({title:"Prestige",writer:"Christopher Nolan",year:2006,
+actor:"Christian Bale"})
+WriteResult({ "nInserted" : 1 })
+> db.MovieDetails.insert({title:"Forgotten",writer:"Jang Hang-jun",year:2017,act
+or:"Kang Ha-neul"})
+WriteResult({ "nInserted" : 1 })
+> db.MovieDetails.insert({title:"Bad Genius",writer:"Tanida",year:2017,actor:"Ch
+utimon Chengcharo"})
+WriteResult({ "nInserted" : 1 })
+> db.MovieDetails.insert({title:"RRR",writer:"S S Rajamouli",year:2022,actor:"Ra
+mcharan"})
+WriteResult({ "nInserted" : 1 })
+> db.MovieDetails.find().pretty()
+{
+        "_id" : ObjectId("62833f497dcb44d62b4ed7cf"),
+        "title" : "KGF 2",
+        "writer" : "Prashanth Neel",
+        "year" : 2022,
+        "actor" : "Yash"
+}
+{
+        "_id" : ObjectId("62833f8a7dcb44d62b4ed7d0"),
+        "title" : "Beast",
+        "writer" : "Nelson",
+        "year" : 2022,
+        "actor" : "Vijay"
+}
+{
+        "_id" : ObjectId("62833ffb7dcb44d62b4ed7d1"),
+        "title" : "Tenet",
+        "writer" : "Christopher Nolan",
+        "year" : 2020,
+        "actor" : "John David"
+}
+{
+        "_id" : ObjectId("6283406a7dcb44d62b4ed7d2"),
+        "title" : "KGF 1",
+        "writer" : "Prashanth Neel",
+        "year" : 2019,
+        "actor" : "Yash"
+}
+{
+        "_id" : ObjectId("628c5622ef3da50c139e10fa"),
+        "title" : "12th Man",
+        "writer" : "K R Krishna Kumar",
+        "year" : 2022,
+        "actor" : "Mohanlal"
+}
+{
+        "_id" : ObjectId("628c5681ef3da50c139e10fb"),
+        "title" : "Harry Potter",
+        "writer" : "J K Rowling",
+        "year" : 2002,
+        "actor" : "Daniel Radcliff"
+}
+{
+        "_id" : ObjectId("628c5796ef3da50c139e10fc"),
+        "title" : "Prestige",
+        "writer" : "Christopher Nolan",
+        "year" : 2006,
+        "actor" : "Christian Bale"
+}
+{
+        "_id" : ObjectId("628c5815ef3da50c139e10fd"),
+        "title" : "Forgotten",
+        "writer" : "Jang Hang-jun",
+        "year" : 2017,
+        "actor" : "Kang Ha-neul"
+}
+{
+        "_id" : ObjectId("628c58d8ef3da50c139e10fe"),
+        "title" : "Bad Genius",
+        "writer" : "Tanida",
+        "year" : 2017,
+        "actor" : "Chutimon Chengcharo"
+}
+{
+        "_id" : ObjectId("628c5929ef3da50c139e10ff"),
+        "title" : "RRR",
+        "writer" : "S S Rajamouli",
+        "year" : 2022,
+        "actor" : "Ramcharan"
+}

@@ -1,0 +1,204 @@
+> db.EMPL.find({name:{$regex:"^s",$options:"$i"}}).pretty()
+{
+        "_id" : ObjectId("62833cad182b3fa10b5e9f1c"),
+        "empno" : 3322,
+        "name" : "Sam",
+        "salary" : 20000,
+        "role" : "Tester"
+}
+{
+        "_id" : ObjectId("62833d2d182b3fa10b5e9f20"),
+        "empno" : 5322,
+        "name" : "Sanket",
+        "salary" : 25000,
+        "role" : "Analyst"
+}
+> db.EMPL.find({name:{$regex:"k$",$options:"$i"}}).pretty()
+{
+        "_id" : ObjectId("62833d51182b3fa10b5e9f21"),
+        "empno" : 4422,
+        "name" : "Abhishek",
+        "salary" : 2000,
+        "role" : "Manager"
+}
+> db.EMPL.find({name:{$regex:"s",$options:"$i"}}).pretty()
+{
+        "_id" : ObjectId("62833cad182b3fa10b5e9f1c"),
+        "empno" : 3322,
+        "name" : "Sam",
+        "salary" : 20000,
+        "role" : "Tester"
+}
+{
+        "_id" : ObjectId("62833d2d182b3fa10b5e9f20"),
+        "empno" : 5322,
+        "name" : "Sanket",
+        "salary" : 25000,
+        "role" : "Analyst"
+}
+{
+        "_id" : ObjectId("62833d51182b3fa10b5e9f21"),
+        "empno" : 4422,
+        "name" : "Abhishek",
+        "salary" : 2000,
+        "role" : "Manager"
+}
+> db.EMPL.update({name:"Sam"},{$inc:{salary:8000}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+> db.EMPL.find({name:"Sam"}).pretty()
+{
+        "_id" : ObjectId("62833cad182b3fa10b5e9f1c"),
+        "empno" : 3322,
+        "name" : "Sam",
+        "salary" : 28000,
+        "role" : "Tester"
+}
+> db.EMPL.updateMany({},{$inc:{salary:4000}})
+{ "acknowledged" : true, "matchedCount" : 10, "modifiedCount" : 10 }
+> db.EMPL.find().pretty()
+{
+        "_id" : ObjectId("62833bfd182b3fa10b5e9f19"),
+        "empno" : 2423,
+        "name" : "Alex",
+        "salary" : 24000,
+        "role" : "Manager"
+}
+{
+        "_id" : ObjectId("62833c52182b3fa10b5e9f1a"),
+        "empno" : 2523,
+        "name" : "Rahul",
+        "salary" : 14000,
+        "role" : "Developer"
+}
+{
+        "_id" : ObjectId("62833c90182b3fa10b5e9f1b"),
+        "empno" : 3543,
+        "name" : "Alen",
+        "salary" : 19000,
+        "role" : "Developer"
+}
+{
+        "_id" : ObjectId("62833cad182b3fa10b5e9f1c"),
+        "empno" : 3322,
+        "name" : "Sam",
+        "salary" : 32000,
+        "role" : "Tester"
+}
+{
+        "_id" : ObjectId("62833cdd182b3fa10b5e9f1d"),
+        "empno" : 2122,
+        "name" : "Martin",
+        "salary" : 22000,
+        "role" : "Designer"
+}
+{
+        "_id" : ObjectId("62833cfd182b3fa10b5e9f1e"),
+        "empno" : 1122,
+        "name" : "Athul",
+        "salary" : 22000,
+        "role" : "Designer"
+}
+{
+        "_id" : ObjectId("62833d1f182b3fa10b5e9f1f"),
+        "empno" : 2622,
+        "name" : "Arjun",
+        "salary" : 29000,
+        "role" : "Analyst"
+}
+{
+        "_id" : ObjectId("62833d2d182b3fa10b5e9f20"),
+        "empno" : 5322,
+        "name" : "Sanket",
+        "salary" : 29000,
+        "role" : "Analyst"
+}
+{
+        "_id" : ObjectId("62833d51182b3fa10b5e9f21"),
+        "empno" : 4422,
+        "name" : "Abhishek",
+        "salary" : 6000,
+        "role" : "Manager"
+}
+{
+        "_id" : ObjectId("62833d7f182b3fa10b5e9f22"),
+        "empno" : 3222,
+        "name" : "Priya",
+        "salary" : 25000,
+        "role" : "Manager"
+}
+
+> db.EMPL.update({name:"Abhishek"},{$set:{remark:"WC"}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+
+> db.EMPL.find().pretty()
+{
+        "_id" : ObjectId("62833bfd182b3fa10b5e9f19"),
+        "empno" : 2423,
+        "name" : "Alex",
+        "salary" : 28000,
+        "role" : "Manager"
+}
+{
+        "_id" : ObjectId("62833c52182b3fa10b5e9f1a"),
+        "empno" : 2523,
+        "name" : "Rahul",
+        "salary" : 14000,
+        "role" : "Developer"
+}
+{
+        "_id" : ObjectId("62833c90182b3fa10b5e9f1b"),
+        "empno" : 3543,
+        "name" : "Alen",
+        "salary" : 19000,
+        "role" : "Developer"
+}
+{
+        "_id" : ObjectId("62833cad182b3fa10b5e9f1c"),
+        "empno" : 3322,
+        "name" : "Sam",
+        "salary" : 32000,
+        "role" : "Tester"
+}
+{
+        "_id" : ObjectId("62833cdd182b3fa10b5e9f1d"),
+        "empno" : 2122,
+        "name" : "Martin",
+        "salary" : 22000,
+        "role" : "Designer"
+}
+{
+        "_id" : ObjectId("62833cfd182b3fa10b5e9f1e"),
+        "empno" : 1122,
+        "name" : "Athul",
+        "salary" : 22000,
+        "role" : "Designer"
+}
+{
+        "_id" : ObjectId("62833d1f182b3fa10b5e9f1f"),
+        "empno" : 2622,
+        "name" : "Arjun",
+        "salary" : 29000,
+        "role" : "Analyst"
+}
+{
+        "_id" : ObjectId("62833d2d182b3fa10b5e9f20"),
+        "empno" : 5322,
+        "name" : "Sanket",
+        "salary" : 29000,
+        "role" : "Analyst"
+}
+{
+        "_id" : ObjectId("62833d51182b3fa10b5e9f21"),
+        "empno" : 4422,
+        "name" : "Abhishek",
+        "salary" : 6000,
+        "role" : "Manager",
+        "remark" : "WC"
+}
+{
+        "_id" : ObjectId("62833d7f182b3fa10b5e9f22"),
+        "empno" : 3222,
+        "name" : "Priya",
+        "salary" : 25000,
+        "role" : "Manager"
+}

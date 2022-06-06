@@ -1,0 +1,10 @@
+mca@mca-desktop:~/nandu$ new2/touch abc
+mca@mca-desktop:~/nandu$ new2/touch abnormal
+mca@mca-desktop:~/nandu$ ls new2
+abc       newsort.txt  text3.txt
+abnormal  text1.txt  text2.txt  
+mca@mca-desktop:~/nandu$ rm -rf new2/ab*
+mca@mca-desktop:~/nandu$ ls new2
+text3.txt   text1.txt  text2.txt  
+mca@mca-desktop:~/nandu$ 
+

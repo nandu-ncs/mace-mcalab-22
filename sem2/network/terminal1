@@ -1,0 +1,38 @@
+mca@mca-desktop:~/nandu$ cat >text1
+first sample file
+^Z
+[2]+  Stopped                 cat > text1
+mca@mca-desktop:~/nandu$ cat >text2
+second sample file 
+^Z
+[3]+  Stopped                 cat > text2
+mca@mca-desktop:~/nandu$ 
+mca@mca-desktop:~/nandu$ cat >text3
+third sample file
+^Z
+[4]+  Stopped                 cat > text3
+
+mca@mca-desktop:~/nandu$ zip com.zip text1
+  adding: text1 (stored 0%)
+mca@mca-desktop:~/nandu$ zip com.zip text2
+  adding: text2 (stored 0%)
+mca@mca-desktop:~/nandu$ zip com.zip text3
+  adding: text3 (stored 0%)
+
+mca@mca-desktop:~/nandu$ unzip -d new com.zip
+Archive:  com.zip
+ extracting: new/text1               
+ extracting: new/text2               
+ extracting: new/text3            
+
+mca@mca-desktop:~/nandu$ cd new
+mca@mca-desktop:~/nandu/new$ ls
+text1  text2  text3
+
+mca@mca-desktop:~/nandu/new$ mv text1 newtext1
+mca@mca-desktop:~/nandu/new$ mv text2 newtext2
+mca@mca-desktop:~/nandu/new$ mv text3 newtext3
+mca@mca-desktop:~/nandu/new$ ls
+newtext1  newtext2  newtext3
+
+

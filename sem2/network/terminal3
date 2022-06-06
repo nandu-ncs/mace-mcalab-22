@@ -1,0 +1,15 @@
+mca@mca-desktop:~/nandu$ cat text1.txt
+first sample file
+mca@mca-desktop:~/nandu$ cat text2.txt
+second sample file
+mca@mca-desktop:~/nandu$ cat text3.txt
+sample file three
+
+
+mca@mca-desktop:~/nandu$ cat text1.txt text2.txt text3.txt | sort >sorted.txt
+
+mca@mca-desktop:~/nandu$ cat sorted.txt
+first sample file
+sample file three
+second sample file
+

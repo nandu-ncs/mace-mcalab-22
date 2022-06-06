@@ -1,0 +1,56 @@
+SQL> create table item22 (item_id int primary key,item_name varchar(20),item_pri
+ce int,expdate date,qty int);
+
+Table created.
+
+SQL> insert into item22 values(213,'dhal',30,'24-jul-22',20);
+
+1 row created.
+
+SQL> insert into item22 values(252,'sugar',40,'15-mar-22',10);
+
+1 row created.
+
+SQL> insert into item22 values(642,'salt',10,'02-aug-22',25);
+
+1 row created.
+
+SQL> insert into item22 values(434,'potato',25,'02-jul-22',30);
+
+1 row created.
+
+SQL> insert into item22 values(534,'ghee',20,'12-aug-22',40);
+
+1 row created.
+
+SQL> select * from item22;
+
+   ITEM_ID ITEM_NAME            ITEM_PRICE EXPDATE          QTY
+---------- -------------------- ---------- --------- ----------
+       213 dhal                         30 24-JUL-22         20
+       252 sugar                        40 15-MAR-22         10
+       642 salt                         10 02-AUG-22         25
+       434 potato                       25 02-JUL-22         30
+       534 ghee                         20 12-AUG-22         40
+
+SQL> select item_name,item_price from item22 where qty>20;
+
+ITEM_NAME            ITEM_PRICE
+-------------------- ----------
+salt                         10
+potato                       25
+ghee                         20
+
+SQL> select item_name from item22 where expdate<current_date;
+
+ITEM_NAME
+--------------------
+sugar
+
+
+
+SQL> alter table item22 add check(item_price>0);
+
+Table altered.
+
+
