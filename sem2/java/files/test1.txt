@@ -1,2 +1,3 @@
 Hello World!
-This is sample text file.
+I'm NCS.
+Ok Bye...

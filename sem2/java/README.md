@@ -34,7 +34,7 @@ to display the data members. Use array of objects to display details of N teache
 <li>Develop a program to handle all mouse events and window events</li>
 <li>Develop a program to handle Key events.</li>
 <h3>CO6</h3>
-<li>Write a program to write to a file, then read from the file and display the contents on the console.</li>
-<li>Write a program that reads from a file having integers. Copy even numbers and odd numbers to separate files.</li>
-<li>Client Server communication using Socket – TCP/IP.</li>
+<li>Write a program to write to a file, then read from the file and display the contents on the console.(FileWriteRead)</li>
+<li>Write a program that reads from a file having integers. Copy even numbers and odd numbers to separate files.(FileOddEven)</li>
+<li>Client Server communication using Socket – TCP/IP.(TCPServer, TCPClient)</li>
 </ol>
