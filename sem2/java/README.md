@@ -24,15 +24,15 @@ to display the data members. Use array of objects to display details of N teache
 <li>Define 2 classes; one for generating Fibonacci numbers and other for displaying even numbers in a given range. Implement using threads - Runnable Interface.(ThreadMain)</li>
 <li>Program to create a generic stack and do the Push and Pop operations.(StackMain)</li>
 <li>Maintain a list of Strings using ArrayList from collection framework,perform built-in operations.(ArrayListString)</li>
-<li>Program to demonstrate the creation of queue object using the PriorityQueue class.</li>
-<li>Program to demonstrate the addition and deletion of elements in deque.</li>
-<li>Write a Java program to compare two hash set.</li>
-<li>Program to demonstrate the working of Map interface by adding, changing and removing elements.</li>
+<li>Program to demonstrate the creation of queue object using the PriorityQueue class.(PriorityQueueMain)</li>
+<li>Program to demonstrate the addition and deletion of elements in deque.(DequeMain)</li>
+<li>Write a Java program to compare two hash set.(HashSetCompare)</li>
+<li>Program to demonstrate the working of Map interface by adding, changing and removing elements.(HashMapMain)</li>
 <h3>CO5</h3>
-<li>Program to find maximum of three numbers using AWT.</li>
-<li>Implement a simple calculator using AWT components.</li>
-<li>Develop a program to handle all mouse events and window events</li>
-<li>Develop a program to handle Key events.</li>
+<li>Program to find maximum of three numbers using AWT.(AWTMax)</li>
+<li>Implement a simple calculator using AWT components.(AWTCalc)</li>
+<li>Develop a program to handle all mouse events and window events.(MouseWindowEvents)</li>
+<li>Develop a program to handle Key events.(KeyEventsMain)</li>
 <h3>CO6</h3>
 <li>Write a program to write to a file, then read from the file and display the contents on the console.(FileWriteRead)</li>
 <li>Write a program that reads from a file having integers. Copy even numbers and odd numbers to separate files.(FileOddEven)</li>
