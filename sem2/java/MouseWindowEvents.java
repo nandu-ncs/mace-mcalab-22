@@ -19,7 +19,7 @@ class WindowExample extends Frame implements WindowListener, MouseListener, Mous
         super("Mouse & Window Events");
         // adding WindowListener to the frame
         l = new Label();
-        l.setBounds(10, 370, 100, 20);
+        l.setBounds(10, 370, 200, 20);
         add(l);
 
         addWindowListener(this);
@@ -113,13 +113,13 @@ class WindowExample extends Frame implements WindowListener, MouseListener, Mous
     public void mouseDragged(MouseEvent e) {
         x = e.getX();
         y = e.getY();
-        l.setText("X=" + x + ", Y=" + y);
+        l.setText("X=" + x + ", Y=" + y + "(Dragging)");
     }
 
     public void mouseMoved(MouseEvent e) {
         x = e.getX();
         y = e.getY();
-        l.setText("X=" + x + ", Y=" + y);
+        l.setText("X=" + x + ", Y=" + y + "(Moving)");
     }
 
     public void paint(Graphics g) {

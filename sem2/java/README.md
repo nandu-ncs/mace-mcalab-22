@@ -29,7 +29,7 @@ to display the data members. Use array of objects to display details of N teache
 <li>Write a Java program to compare two hash set.(HashSetCompare)</li>
 <li>Program to demonstrate the working of Map interface by adding, changing and removing elements.(HashMapMain)</li>
 <h3>CO5</h3>
-<li>Program to find maximum of three numbers using AWT.(AWTMax)</li>
+<li>Program to find maximum of three numbers using AWT.(AWTMax3)</li>
 <li>Implement a simple calculator using AWT components.(AWTCalc)</li>
 <li>Develop a program to handle all mouse events and window events.(MouseWindowEvents)</li>
 <li>Develop a program to handle Key events.(KeyEventsMain)</li>

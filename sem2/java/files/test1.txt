@@ -1,3 +1,2 @@
 Hello World!
-I'm NCS.
-Ok Bye...
+I'm NCS
