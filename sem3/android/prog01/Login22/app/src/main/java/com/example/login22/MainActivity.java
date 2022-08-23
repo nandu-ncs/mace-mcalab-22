@@ -48,15 +48,15 @@ public class MainActivity extends AppCompatActivity implements  View.OnClickList
 
     @Override
     public void onClick(View v) {
-        String m="abc";
-        String n="xyz";
+        String m="nandu-ncs";
+        String n="123";
         o=a.getText().toString();
         p=b.getText().toString();
         if(o.equals(m) && p.equals(n)) {
-            Toast.makeText(this, "successfull login", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"Login Success",Toast.LENGTH_SHORT).show();
         }
         else{
-            Toast.makeText(this,"login failed",Toast.LENGTH_SHORT).show();
+            Toast.makeText(this,"Login Failed",Toast.LENGTH_SHORT).show();
         }
     }
 }
