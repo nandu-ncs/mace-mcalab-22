@@ -8,31 +8,52 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/regtxt"
+        android:textAlignment="center"
+        android:text="REGISTER"
+        android:textSize="25dp"
+        android:textFontWeight="2"
+        android:textColor="@color/black"/>
 
     <EditText
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_margin="15dp"
         android:textColor="@color/purple_700"
         android:hint="First Name"
         android:id="@+id/fname"/>
 
     <EditText
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_margin="15dp"
         android:textColor="@color/purple_700"
         android:hint="Last Name"
         android:id="@+id/lname"/>
 
     <EditText
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_margin="15dp"
         android:textColor="@color/purple_700"
         android:hint="Email"
         android:id="@+id/email"/>
 
     <EditText
         android:layout_height="wrap_content"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_margin="15dp"
         android:textColor="@color/purple_500"
         android:inputType="textPassword"
         android:hint="Password"
