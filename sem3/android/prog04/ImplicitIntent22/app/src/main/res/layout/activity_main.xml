@@ -30,6 +30,12 @@
         android:layout_height="wrap_content"
         android:layout_width="wrap_content"
         android:layout_marginTop="20dp"
+        android:text="Open Email"
+        android:id="@+id/gmail"/>
+    <Button
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
         android:text="Open Phone"
         android:id="@+id/phone"/>
     <Button

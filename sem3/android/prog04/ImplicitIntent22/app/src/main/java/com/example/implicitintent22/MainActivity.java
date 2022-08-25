@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    Button browser,playstore,map,phone,message;
+    Button browser,playstore,map,gmail,phone,message;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         browser = (Button)findViewById(R.id.browser);
         playstore = (Button)findViewById(R.id.playstore);
         map = (Button)findViewById(R.id.map);
+        gmail = (Button)findViewById(R.id.gmail);
         phone = (Button)findViewById(R.id.phone);
         message = (Button)findViewById(R.id.message);
         browser.setOnClickListener(new View.OnClickListener() {
@@ -43,6 +44,18 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(chooser);
             }
         });
+        gmail.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(Intent.ACTION_SEND, Uri.parse("mailto"));
+                intent.putExtra(Intent.EXTRA_EMAIL,"nandusasikumar007@gmail.com");
+                intent.putExtra(Intent.EXTRA_SUBJECT,"From emulator");
+                intent.putExtra(Intent.EXTRA_TEXT,"My first test mail");
+                intent.setType("message/rfc822");
+                Intent chooser = Intent.createChooser(intent,"Choose Gmail");
+                startActivity(chooser);
+            }
+        });
         phone.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -56,8 +69,8 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_SEND);
                 intent.putExtra(Intent.EXTRA_TEXT, "Hi!");
-                intent.setData(Uri.parse("android.resource://" + getPackageName() + "/drawable/" + "pro"));
-                intent.putExtra(Intent.EXTRA_STREAM, Uri.parse("android.resource://" + getPackageName() + "/drawable/" + "pro"));
+                intent.setData(Uri.parse("android.resource://" + getPackageName() + "/drawable/" + R.drawable.pro));
+                intent.putExtra(Intent.EXTRA_STREAM, Uri.parse("android.resource://" + getPackageName() + "/drawable/" + R.drawable.pro));
                 intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
                 intent.setType("image/jpeg");
                 Intent chooser = Intent.createChooser(intent,"Choose message app");
