@@ -47,8 +47,9 @@ public class MainActivity extends AppCompatActivity {
         gmail.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String to[] = {"nandusasikumar7@gmail.com"};
                 Intent intent = new Intent(Intent.ACTION_SEND, Uri.parse("mailto"));
-                intent.putExtra(Intent.EXTRA_EMAIL,"nandusasikumar007@gmail.com");
+                intent.putExtra(Intent.EXTRA_EMAIL,to);
                 intent.putExtra(Intent.EXTRA_SUBJECT,"From emulator");
                 intent.putExtra(Intent.EXTRA_TEXT,"My first test mail");
                 intent.setType("message/rfc822");
