@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
+    Integer flag=0,op = 0;
     Float res = Float.parseFloat("0");
     Float num;
     TextView input;
@@ -99,33 +100,50 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 num = Float.parseFloat((String)input.getText());
-                if(res>0) {
-
+                input.setText("");
+                if(flag==0) {
+                    res=num;
+                    flag=1;
                 }
+                else {
+                    res+=num;
+                }
+                op = 1;
             }
         });
-        btn9.setOnClickListener(new View.OnClickListener() {
+        btnsub.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 input.setText(input.getText()+String.valueOf(9));
             }
         });
-        btn9.setOnClickListener(new View.OnClickListener() {
+        btnmul.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 input.setText(input.getText()+String.valueOf(9));
             }
         });
-        btn9.setOnClickListener(new View.OnClickListener() {
+        btndiv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 input.setText(input.getText()+String.valueOf(9));
             }
         });
-        btn9.setOnClickListener(new View.OnClickListener() {
+        btneq.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                input.setText(input.getText()+String.valueOf(9));
+                flag = 0;
+                num = Float.parseFloat((String)input.getText());
+                if(op == 1)
+                    res+=num;
+                input.setText(String.valueOf(res));
+            }
+        });
+        btnac.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                flag = 0;
+                input.setText("");
             }
         });
     }
