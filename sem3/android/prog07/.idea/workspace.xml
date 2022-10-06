@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6bdaf26f-353c-4c25-bef7-9ba30a8e307a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/prog07.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../prog08/CustomToast22/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog08/CustomToast22/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../prog08/CustomToast22/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog08/CustomToast22/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../prog08/CustomToast22/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog08/CustomToast22/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../prog08/CustomToast22/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog08/CustomToast22/app/src/main/java/com/example/customtoast22/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../prog08/CustomToast22/app/src/main/java/com/example/customtoast22/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog08/CustomToast22/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../prog08/CustomToast22/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../prog08/CustomToast22/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/../prog08/CustomToast22/build.gradle" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="2F8MASrUmDILRdXVRHZzuua7apc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="cidr.known.project.marker" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6bdaf26f-353c-4c25-bef7-9ba30a8e307a" name="Changes" comment="" />
+      <created>1663869116038</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663869116038</updated>
+    </task>
+    <servers />
+  </component>
+</project>

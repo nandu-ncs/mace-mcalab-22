@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:src="@drawable/b1"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:onClick="swapimage"
+        android:id="@+id/img1" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/img2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/b2"
+            android:visibility="gone"
+            android:onClick="swapimage"/>
+
+        <ImageView
+            android:src="@drawable/b3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:id="@+id/img3"
+            android:visibility="gone"
+            android:onClick="swapimage"/>
+
+        <ImageView
+            android:src="@drawable/b4"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:id="@+id/img4"
+            android:onClick="swapimage"/>
+
+    </LinearLayout>
+
+
+</FrameLayout>

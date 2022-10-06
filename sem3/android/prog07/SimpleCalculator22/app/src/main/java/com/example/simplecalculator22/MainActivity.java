@@ -105,6 +105,14 @@ public class MainActivity extends AppCompatActivity {
                     res=num;
                     flag=1;
                 }
+                else if (op!=1) {
+                    if(op == 2)
+                        res-=num;
+                    if(op == 3)
+                        res*=num;
+                    if(op == 4)
+                        res/=num;
+                }
                 else {
                     res+=num;
                 }
@@ -114,19 +122,70 @@ public class MainActivity extends AppCompatActivity {
         btnsub.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                input.setText(input.getText()+String.valueOf(9));
+                num = Float.parseFloat((String)input.getText());
+                input.setText("");
+                if(flag==0) {
+                    res=num;
+                    flag=1;
+                }
+                else if (op!=2) {
+                    if(op == 1)
+                        res+=num;
+                    if(op == 3)
+                        res*=num;
+                    if(op == 4)
+                        res/=num;
+                }
+                else {
+                    res-=num;
+                }
+                op = 2;
             }
         });
         btnmul.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                input.setText(input.getText()+String.valueOf(9));
+                num = Float.parseFloat((String)input.getText());
+                input.setText("");
+                if(flag==0) {
+                    res=num;
+                    flag=1;
+                }
+                else if (op!=3) {
+                    if(op == 1)
+                        res+=num;
+                    if(op == 2)
+                        res-=num;
+                    if(op == 4)
+                        res/=num;
+                }
+                else {
+                    res*=num;
+                }
+                op = 3;
             }
         });
         btndiv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                input.setText(input.getText()+String.valueOf(9));
+                num = Float.parseFloat((String)input.getText());
+                input.setText("");
+                if(flag==0) {
+                    res=num;
+                    flag=1;
+                }
+                else if (op!=4) {
+                    if(op == 1)
+                        res+=num;
+                    if(op == 3)
+                        res*=num;
+                    if(op == 2)
+                        res-=num;
+                }
+                else {
+                    res/=num;
+                }
+                op = 4;
             }
         });
         btneq.setOnClickListener(new View.OnClickListener() {
@@ -136,6 +195,12 @@ public class MainActivity extends AppCompatActivity {
                 num = Float.parseFloat((String)input.getText());
                 if(op == 1)
                     res+=num;
+                if(op == 2)
+                    res-=num;
+                if(op == 3)
+                    res*=num;
+                if(op == 4)
+                    res/=num;
                 input.setText(String.valueOf(res));
             }
         });
