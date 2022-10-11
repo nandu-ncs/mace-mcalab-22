@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/fb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:textSize="50sp"
+        android:textAlignment="center"
+        android:text="Facebook" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fb"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="Email"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/emailfield"
+        android:layout_below="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:textSize="30sp"
+        android:text="Email" />
+
+
+    <TextView
+        android:id="@+id/pass"
+        android:layout_below="@+id/emailfield"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:textSize="25sp"
+        android:text="Password" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pass"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="Password"
+        android:textSize="30sp" />
+
+    <CheckBox
+        android:id="@+id/chkbox"
+        android:layout_below="@+id/password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentLeft="true"
+        android:textSize="20sp"
+        android:text="Save Login"
+        />
+
+    <Button
+        android:id="@+id/signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/chkbox"
+        android:layout_alignParentLeft="true"
+        android:text="Sign In" />
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_below="@+id/chkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true"
+        android:text="Sign Up"/>
+
+    <TextView
+        android:id="@+id/acc"
+        android:layout_below="@id/signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="50dp"
+        android:textSize="15dp"
+        android:text="Need an account?\nSign up using your phone."
+        android:textAlignment="center" />
+
+</RelativeLayout>
