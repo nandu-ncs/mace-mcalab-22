@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SqliteDemo22</string>
+    <string name="add">Add User</string>
+    <string name="all">View All</string>
+    <string name="one">View One</string>
+    <string name="did">Get Dept Id</string>
+    <string name="update">Update User</string>
+    <string name="del">Remove User</string>
+
+</resources>
