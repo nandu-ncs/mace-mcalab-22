@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:id="@+id/dml">
+        <item android:id="@+id/home"
+            android:icon="@drawable/add"
+            android:title="Home" />
+        <item android:id="@+id/a1"
+            android:icon="@drawable/add"
+            android:title="@string/add" />
+        <item android:id="@+id/a2"
+            android:icon="@drawable/add"
+            android:title="@string/update"/>
+        <item android:id="@+id/a3"
+            android:icon="@drawable/add"
+            android:title="@string/del" />
+    </group>
+    <group android:id="@+id/select">
+        <item android:id="@+id/a4"
+            android:icon="@drawable/add"
+            android:title="@string/all" />
+        <item android:id="@+id/a5"
+            android:icon="@drawable/add"
+            android:title="@string/one"/>
+    </group>
+</menu>

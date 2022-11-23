@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Sqlite22</string>
+    <string name="add">Add Student</string>
+    <string name="all">View All</string>
+    <string name="one">Search</string>
+    <string name="update">Update Student</string>
+    <string name="del">Remove Student</string>
+
+</resources>
