@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Spinner</string>
+    <string-array name="Country">
+        <item>India</item>
+        <item>United Kingdom</item>
+        <item>Australia</item>
+    </string-array>
+
+</resources>
